@@ -1,0 +1,17 @@
+h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 24px;
+}
+
+.container{
+    max-width: 768px !important;
+}
+
+.header{
+    background-color: #00ff00;
+    border-bottom:  solid 2px #f2f2f2;
+}

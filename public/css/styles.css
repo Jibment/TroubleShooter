@@ -1,0 +1,8 @@
+.hidden{
+    display: none; /* ボタンが押されたら非表示 */
+}
+
+.content{
+    display: flex;
+} 
+
