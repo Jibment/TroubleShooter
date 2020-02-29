@@ -17,17 +17,17 @@
 
 Route::get('/', 'PagesController@getHome');
 Route::get('/about', 'PagesController@getAbout');
-Route::match(['get','post'],'/thread', 'ThreadController@store');
-Route::match(['get','post'],'/data','PagesController@getData');
-Route::get('/thread/{id}',function($id){    //記事へのURL idでデータを検索
-    return view('content')->with('id',$id);
+Route::match(['get', 'post'], '/thread', 'SaveController@store');
+Route::match(['get', 'post'], '/data', 'PagesController@getData');
+Route::get('/thread/{id}', function ($id) {    //記事へのURL idでデータを検索
+    return view('content')->with('id', $id);
 })->name('thread.show');
 Route::post('/save', 'SaveController@store');
 
 Route::get('/auth/twitter', 'Auth\SocialAuthController@redirectToProvider');
 Route::get('/auth/twitter/callback', 'Auth\SocialAuthController@handleProviderCallback');
 Route::get('/auth/twitter/logout', 'Auth\SocialAuthController@logout');
-Route::get('/welcome', function(){
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
