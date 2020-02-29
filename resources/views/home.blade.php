@@ -26,8 +26,7 @@
     </nav>
 </header>
     <h1>トラブルシューター</h1>
-    <form>
-    <input type = "button" value="新しいスレッドを作成する" id ="make_thread" onClick="location.href='http://localhost/data'">
-    </form>
+    <a href ="{{url('/data')}}">新しいスレッド</a>
+    <a href ="{{url('/auth/twitter')}}">twitterログイン</a>
 </body>
 </html>

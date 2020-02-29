@@ -21,7 +21,7 @@
     </div>
     </nav>
 </header>
-  <h1>トラブルシューター</h1>
+  <h1>トラブルシューター</h1>  
   <form action = "save" method ="POST">
     @csrf
     タイトルはここ！
